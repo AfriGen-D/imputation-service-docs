@@ -1,0 +1,94 @@
+/**
+ * AfriGen-D Brand Styling
+ * Following the AfriGen-D design system for genomics tools
+ */
+
+:root {
+  /* AfriGen-D Primary Brand Colors */
+  --vp-c-brand-1: #C94234;
+  --vp-c-brand-2: #F4A535;
+  --vp-c-brand-3: #2E7D32;
+
+  /* Primary color variations */
+  --vp-c-brand: var(--vp-c-brand-1);
+  --vp-c-brand-light: #E35948;
+  --vp-c-brand-lighter: #F07062;
+  --vp-c-brand-dark: #A93629;
+  --vp-c-brand-darker: #8A2B21;
+
+  /* Accent colors */
+  --vp-c-accent: var(--vp-c-brand-2);
+
+  /* Custom button colors */
+  --vp-button-brand-bg: var(--vp-c-brand-1);
+  --vp-button-brand-border: var(--vp-c-brand-1);
+  --vp-button-brand-text: #ffffff;
+  --vp-button-brand-hover-bg: var(--vp-c-brand-dark);
+  --vp-button-brand-hover-border: var(--vp-c-brand-dark);
+  --vp-button-brand-active-bg: var(--vp-c-brand-darker);
+  --vp-button-brand-active-border: var(--vp-c-brand-darker);
+}
+
+.dark {
+  /* Dark mode adjustments for AfriGen-D colors */
+  --vp-c-brand-1: #E35948;
+  --vp-c-brand-2: #F7B74F;
+  --vp-c-brand-3: #4CAF50;
+
+  --vp-c-brand: var(--vp-c-brand-1);
+  --vp-c-brand-light: #F07062;
+  --vp-c-brand-lighter: #FF8A7A;
+  --vp-c-brand-dark: #C94234;
+  --vp-c-brand-darker: #A93629;
+}
+
+/**
+ * Custom styling for home hero section
+ */
+.VPHero .name {
+  background: linear-gradient(120deg, var(--vp-c-brand-1) 30%, var(--vp-c-brand-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/**
+ * Custom styling for feature boxes
+ */
+.VPFeature {
+  border: 1px solid var(--vp-c-divider);
+  transition: border-color 0.25s, background-color 0.25s;
+}
+
+.VPFeature:hover {
+  border-color: var(--vp-c-brand-1);
+}
+
+/**
+ * Link colors
+ */
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.25s;
+}
+
+.vp-doc a:hover {
+  text-decoration-color: var(--vp-c-brand-1);
+}
+
+/**
+ * Custom container styling for tips, warnings, etc.
+ */
+.custom-block.tip {
+  border-color: var(--vp-c-brand-3);
+}
+
+.custom-block.warning {
+  border-color: var(--vp-c-brand-2);
+}
+
+.custom-block.danger {
+  border-color: var(--vp-c-brand-1);
+}

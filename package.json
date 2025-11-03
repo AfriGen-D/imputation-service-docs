@@ -1,0 +1,22 @@
+{
+  "name": "imputation-service-docs",
+  "version": "2.0.0",
+  "description": "AfriGen Genotype Imputation Service Documentation",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0",
+    "vue": "^3.3.0"
+  },
+  "keywords": [
+    "genomics",
+    "imputation",
+    "genotype",
+    "afrigen",
+    "documentation"
+  ],
+  "license": "MIT"
+}
