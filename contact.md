@@ -193,10 +193,10 @@ Contribute to our open source projects:
 ### Security Issues
 For security vulnerabilities or concerns:
 
-**Email**: [security@imputationserver.com](mailto:security@imputationserver.com)  
-**PGP Key**: [Download public key](https://imputationserver.com/security/pgp-key.asc)  
-**Response**: Within 24 hours  
-**Policy**: [Responsible disclosure](security.md#reporting-security-issues)
+**Email**: [security@imputationserver.com](mailto:security@imputationserver.com)
+**PGP Key**: [Download public key](https://imputationserver.com/security/pgp-key.asc)
+**Response**: Within 24 hours
+**Policy**: [Responsible disclosure](genotype-imputation/security.md#reporting-security-issues)
 
 ### Privacy Questions
 For questions about data handling and privacy:
