@@ -8,7 +8,7 @@ Get help with the AfriGen-D Imputation Service. Our team is here to assist with 
 
 For issues with imputation jobs, data preparation, or technical questions:
 
-**Email**: [support@imputationserver.com](mailto:support@imputationserver.com)
+**Email**: [support@bioinformaticsinstitute.africa](mailto:support@bioinformaticsinstitute.africa)
 **Response Time**: Within 24 hours
 **Available**: Monday-Friday, 9 AM - 5 PM EST
 
@@ -16,7 +16,7 @@ For issues with imputation jobs, data preparation, or technical questions:
 
 For questions about methodology, interpretation, or research applications:
 
-**Email**: [science@imputationserver.com](mailto:science@imputationserver.com)
+**Email**: [science@bioinformaticsinstitute.africa](mailto:science@bioinformaticsinstitute.africa)
 **Response Time**: 2-3 business days
 **Available**: Monday-Friday
 
@@ -24,7 +24,7 @@ For questions about methodology, interpretation, or research applications:
 
 For partnerships, collaborations, or general information:
 
-**Email**: [info@imputationserver.com](mailto:info@imputationserver.com)
+**Email**: [info@bioinformaticsinstitute.africa](mailto:info@bioinformaticsinstitute.africa)
 **Response Time**: 1-2 business days
 
 ---

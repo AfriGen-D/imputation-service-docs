@@ -261,9 +261,9 @@ Report documentation issues:
 - **Pull Requests**: Contribute improvements directly
 
 ### Service Support
-- **Technical Support**: support@imputationserver.com
-- **Scientific Questions**: science@imputationserver.com
-- **General Inquiries**: info@imputationserver.com
+- **Technical Support**: support@bioinformaticsinstitute.africa
+- **Scientific Questions**: science@bioinformaticsinstitute.africa
+- **General Inquiries**: info@bioinformaticsinstitute.africa
 
 ## 📜 License
 

@@ -414,4 +414,4 @@ Need more assistance? Try these resources in order:
 4. **Ask the community**: Post on relevant forums
 5. **Contact support**: [Get in touch](contact.md) with our team
 
-For urgent issues or institutional partnerships, contact us directly at [support@imputationserver.com](mailto:support@imputationserver.com). 
+For urgent issues or institutional partnerships, contact us directly at [support@bioinformaticsinstitute.africa](mailto:support@bioinformaticsinstitute.africa). 

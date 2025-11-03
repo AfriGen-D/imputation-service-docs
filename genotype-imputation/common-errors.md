@@ -466,7 +466,7 @@ If your error isn't listed here or the solutions don't resolve your issue:
 
 1. **Check the [FAQ](faq.md)** for additional answers
 2. **Search the documentation** using the search bar
-3. **Contact support** at [support@imputationserver.com](mailto:support@imputationserver.com)
+3. **Contact support** at [support@bioinformaticsinstitute.africa](mailto:support@bioinformaticsinstitute.africa)
 
 When contacting support, include:
 - Complete error message

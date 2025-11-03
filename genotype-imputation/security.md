@@ -186,13 +186,13 @@ response = requests.get(
 ### Responsible Disclosure
 If you discover a security vulnerability:
 
-1. **Email us**: security@imputationserver.com
+1. **Email us**: security@bioinformaticsinstitute.africa
 2. **Include details**: Description, reproduction steps, impact
 3. **Allow time**: Give us 90 days to address before public disclosure
 4. **Coordination**: Work with us on coordinated disclosure
 
 ### Security Contact
-- **Email**: security@imputationserver.com
+- **Email**: security@bioinformaticsinstitute.africa
 - **PGP Key**: Available on our contact page
 - **Response time**: Within 24 hours for security issues
 

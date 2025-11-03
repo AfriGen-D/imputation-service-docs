@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 
-export default defineConfig({
+export default withMermaid({
   title: 'Genotype Imputation Service',
   description: 'Free Next-Generation Genotype Imputation Service for African Genomics',
   base: '/imputation-service-docs/',
