@@ -17,7 +17,7 @@ Genotype imputation is a statistical technique used to infer genotypes that are 
 
 Before uploading, make sure your data meets our requirements:
 
-- **Supported format**: VCF only (uncompressed .vcf files)
+- **Supported format**: bgzip-compressed VCF files (`.vcf.gz`), one file per chromosome
 - **Maximum sample size**: 110,000 samples
 - **Coordinates**: Build 37 (hg19) or Build 38 (hg38)
 - **Quality requirements**: See [Data Preparation](data-preparation.md) for details
@@ -38,7 +38,7 @@ Please review our [data preparation guidelines](data-preparation.md) carefully t
 
 | Parameter | Description | Options |
 |-----------|-------------|---------|
-| Reference Panel | Population-specific reference for imputation | HRC, 1000G, TOPMed, etc. |
+| Reference Panel | Population-specific reference for imputation | H3Africa v6, 1000 Genomes Phase 3 |
 | Phasing | Whether input data is pre-phased | Eagle2, No phasing |
 | Population | Population for quality control | EUR, AFR, AMR, EAS, SAS, Mixed |
 | Build | Genome build of input data | hg19/GRCh37, hg38/GRCh38 |

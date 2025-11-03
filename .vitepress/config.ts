@@ -30,6 +30,7 @@ export default defineConfig({
             { text: 'Allele Swap Changes', link: '/genotype-imputation/allele-swap-changes' },
             { text: 'Pipeline Overview', link: '/genotype-imputation/pipeline-overview' },
             { text: 'Security', link: '/genotype-imputation/security' },
+            { text: 'Common Errors & Fixes', link: '/genotype-imputation/common-errors' },
             { text: 'FAQ', link: '/genotype-imputation/faq' }
           ]
         }

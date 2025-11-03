@@ -31,24 +31,30 @@ Currently, we support up to **110,000 samples** per job. For larger datasets, co
 ### What file formats are supported?
 
 We support only one format:
-- **VCF files**: Uncompressed .vcf files only
+- **VCF files**: bgzip-compressed VCF files (`.vcf.gz`), one file per chromosome
 
-If your data is in PLINK or other formats, you must convert to VCF before uploading.
+If your data is in PLINK or other formats, you must convert to VCF and compress with bgzip before uploading.
 
 ### My VCF file won't upload. What's wrong?
 
 Common issues include:
-- **Compressed files**: We only accept uncompressed .vcf files
+- **Wrong compression**: Files must be bgzip-compressed (not regular gzip or uncompressed)
 - **Invalid headers**: Check VCF format compliance
 - **Large file size**: Files must be < 2GB each
-- **Character encoding**: Use UTF-8 encoding
+- **Multiple chromosomes**: Each file must contain only one chromosome
 
 ```bash
-# Fix compressed VCF
-gunzip yourfile.vcf.gz
+# Compress VCF with bgzip (required)
+bgzip yourfile.vcf
+# Creates yourfile.vcf.gz
 
 # Validate VCF format
-vcf-validator yourfile.vcf
+bcftools view -h yourfile.vcf.gz | head -20
+
+# Split by chromosome if needed
+for chr in {1..22} X; do
+  bcftools view -r ${chr} input.vcf.gz -Oz -o chr${chr}.vcf.gz
+done
 ```
 
 ### How do I know which genome build my data uses?
@@ -75,33 +81,43 @@ plink --bfile input \
 
 ### Which reference panel should I choose?
 
-Choose based on your study population:
+The AfriGen-D Imputation Service offers two reference panels:
 
-| Population | Recommended Panel |
-|------------|-------------------|
-| European | HRC, 1000G EUR |
-| African | 1000G AFR, CAAPA |
-| East Asian | 1000G EAS |
-| South Asian | 1000G SAS |
-| Mixed/Unknown | 1000G ALL |
+| Population | Recommended Panel | Reason |
+|------------|-------------------|--------|
+| African & African-diaspora | **H3Africa v6** | 4,447 African samples, highest African diversity |
+| African American | **H3Africa v6** | Optimized for African ancestry |
+| Afro-Caribbean, Afro-Latino | **H3Africa v6** | Best for admixed African populations |
+| European | **1000 Genomes Phase 3** | 503 European samples |
+| East Asian | **1000 Genomes Phase 3** | 504 East Asian samples |
+| South Asian | **1000 Genomes Phase 3** | 489 South Asian samples |
+| Latino/Admixed American | **1000 Genomes Phase 3** | 347 admixed American samples |
+| Mixed/Unknown | **1000 Genomes Phase 3** | Global representation |
 
-### What's the difference between HRC and 1000G?
+::: tip Choosing Between Panels
+- **≥50% African ancestry**: Use **H3Africa v6**
+- **<50% African ancestry or non-African**: Use **1000 Genomes Phase 3**
+:::
 
-- **HRC (Haplotype Reference Consortium)**:
-  - 32,470 samples
-  - 39 million variants
-  - European-focused
-  - Higher accuracy for Europeans
+### What's the difference between H3Africa v6 and 1000 Genomes?
 
-- **1000 Genomes Project**:
-  - 2,504 samples
-  - 84 million variants
-  - Global populations
-  - Better for non-Europeans
+**H3Africa v6 (Build 38)**:
+- **4,447 samples** from 48 populations (22 African nations)
+- **130 million biallelic SNPs**
+- **African-optimized**: Best for African and African-diaspora populations
+- **GRCh38/hg38 only**
+
+**1000 Genomes Phase 3 (Version 5)**:
+- **2,504 samples** from 26 global populations
+- **81 million SNPs** (autosomes) + 3.2 million (chr X)
+- **Global diversity**: Covers all major continental ancestries
+- **GRCh37/hg19 or GRCh38/hg38**
+
+For detailed comparison, see [Reference Panels](../reference-panels.md).
 
 ### Can I use my own reference panel?
 
-Currently, we only support our curated reference panels. Contact us if you have a specific need for custom panels.
+Currently, we only support H3Africa v6 and 1000 Genomes Phase 3 reference panels. These panels are optimized for the service and provide high-quality imputation for diverse populations. If you have specific needs, please [contact us](../contact.md).
 
 ## Job Submission and Processing
 
