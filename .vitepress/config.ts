@@ -6,11 +6,11 @@ export default defineConfig({
   base: '/imputation-service-docs/',
 
   head: [
-    ['link', { rel: 'icon', href: '/imputation-service-docs/logo.svg' }]
+    ['link', { rel: 'icon', href: '/imputation-service-docs/afrigen-d-logo.png' }]
   ],
 
   themeConfig: {
-    logo: '/logo.svg',
+    logo: '/afrigen-d-logo.png',
 
     nav: [
       { text: 'Home', link: '/' },
