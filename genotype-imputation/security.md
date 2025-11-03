@@ -22,7 +22,7 @@ Our security framework is built on multiple layers of protection:
 ### Upload Security
 ```bash
 # All uploads use HTTPS
-curl -X POST https://imputationserver.com/api/upload \
+curl -X POST https://impute.afrigen-d.org/api/upload \
      -H "Authorization: Bearer YOUR_TOKEN" \
      -F "file=@data.vcf" \
      --tlsv1.3
@@ -116,7 +116,7 @@ headers = {
 }
 
 response = requests.get(
-    'https://api.imputationserver.com/jobs',
+    'https://impute.afrigen-d.org/api/jobs',
     headers=headers
 )
 ```
@@ -227,4 +227,4 @@ Security policies and procedures are regularly reviewed and updated. Users will 
 **Last updated**: December 2024  
 **Next review**: June 2025
 
-For the most current security information, visit our [security page](https://imputationserver.com/security) or contact our security team. 
+For the most current security information, visit our [security page](https://impute.afrigen-d.org/security) or contact our security team. 

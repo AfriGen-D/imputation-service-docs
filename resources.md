@@ -269,7 +269,7 @@ eagle --vcf input.vcf.gz \
 **Authentication:**
 ```bash
 # Get access token
-curl -X POST https://api.imputationserver.com/auth/login \
+curl -X POST https://impute.afrigen-d.org/api/auth/login \
      -H "Content-Type: application/json" \
      -d '{"username": "your_username", "password": "your_password"}'
 ```
@@ -277,7 +277,7 @@ curl -X POST https://api.imputationserver.com/auth/login \
 **Submit Imputation Job:**
 ```bash
 # Submit job via API
-curl -X POST https://api.imputationserver.com/jobs/imputation \
+curl -X POST https://impute.afrigen-d.org/api/jobs/imputation \
      -H "Authorization: Bearer YOUR_TOKEN" \
      -F "genotypes=@data.vcf" \
      -F "reference_panel=hrc" \
@@ -287,7 +287,7 @@ curl -X POST https://api.imputationserver.com/jobs/imputation \
 **Check Job Status:**
 ```bash
 # Get job status
-curl -X GET https://api.imputationserver.com/jobs/JOB_ID \
+curl -X GET https://impute.afrigen-d.org/api/jobs/JOB_ID \
      -H "Authorization: Bearer YOUR_TOKEN"
 ```
 

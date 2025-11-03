@@ -252,7 +252,7 @@ rs12124819  G   A   0.315  0.756 0.761 0.758
 import requests
 
 # Submit job
-response = requests.post('https://api.imputationserver.com/jobs', 
+response = requests.post('https://impute.afrigen-d.org/api/jobs', 
                         headers={'Authorization': 'Bearer YOUR_TOKEN'},
                         files={'genotypes': open('data.vcf', 'rb')},
                         data={'reference_panel': 'hrc',
@@ -260,7 +260,7 @@ response = requests.post('https://api.imputationserver.com/jobs',
 
 # Check status
 job_id = response.json()['job_id']
-status = requests.get(f'https://api.imputationserver.com/jobs/{job_id}')
+status = requests.get(f'https://impute.afrigen-d.org/api/jobs/{job_id}')
 ```
 
 ## Version History

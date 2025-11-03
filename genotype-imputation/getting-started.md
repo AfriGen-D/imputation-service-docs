@@ -86,7 +86,7 @@ bcftools view input.vcf.gz > prepared_input.vcf
 # (Use the web interface for file upload)
 
 # 3. Download results
-wget https://imputationserver.com/results/job_123/chr1.dose.vcf.gz
+wget https://impute.afrigen-d.org/results/job_123/chr1.dose.vcf.gz
 ```
 
 ## Next Steps
